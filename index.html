@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+	<title>Hangman</title>
+</head>
+<body >
+	<div class="container">
+		<!-- for cheating open hte console -->
+		<div class="row"  style="background-color: #494a4c; height: 70%;width: 70%;">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10" id="main" style="padding: 20px;">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 id="hangman">HangMan</h1>
+					</div>					
+				</div>
+				<h2  id="lastDateBlinker" style="color: #ffffff; position: absolute; top:300px;left: 200px; z-index: 1; text-align: center;" > Press any key to start</h2>
+				<div class="row game-element" id="game_box">
+
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5 game_col">
+						<div class="game-element"  style="background-color: #ffffff;padding-left: 10%; height: 210px; ">
+						<img id="picture" src="assets/images/Hangman-0.png" height="200px" width="150px">
+						<br>
+						<hr>
+						<h2>Wins :<div id="win_box">0</div></h2>
+						<br>
+						<hr>
+						<h2>Loss :<div id="loss_box">0</div></h2>
+						
+						</div>
+					</div>
+					<div class="col-sm-5 game_col" >
+						
+						<h2> current ward</h2>
+						<br>
+						<div id="current_word_box" style="font-size: 25px;"></div>
+						<br>
+						<h2>Number of guesses remaining</h2>
+						<br>
+						<div id="remaining_guesses_box"></div>
+						<h2>Letters chossen</h2>
+						<div id="chossen_letter_box"></div>
+						
+					</div>
+					<div class="col-sm-1"></div>
+
+				</div>				
+			</div>
+			<div class="col-sm-1"></div>
+			<div id="sound_element" style="visibility: hidden;"></div>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/wards_list.js"></script> 
+	<script type="text/javascript" src="assets/js/blinking.js"></script> 
+	<script type="text/javascript">
+	var starting_game_code = 0;
+	var word_finding_code = 0;
+	var chosen_word = '';
+	var word_lenght = 0;
+	var number_of_remening_guess = 6;
+	var word_to_dysplay = [];
+	var chossen_letter_list = [];
+	var number_of_win = 0;
+	var number_of_loss = 0;
+	</script>
+	<script type="text/javascript" src="assets/js/game.js"> </script>
+</div>
+			
+</div>
+</body>
+</html>

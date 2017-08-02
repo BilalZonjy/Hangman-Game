@@ -1,0 +1,52 @@
+body{
+background-color:#494a4c ;
+
+}
+#main{
+        background-image:url(../images/placeholder.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-opacity: 0.2; 
+        background-filter: alpha(opacity=20);
+
+        height: 800px;
+        width: 750px;
+
+        position: fixed;
+        top: 150px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+h1{font-family: 'Bungee Outline', cursive;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+#game_box{
+    height: 70%;
+}
+
+.game_col{
+height: 100%;
+border: 5px dashed  #ffffff;
+padding-top: 2%;
+text-align: center; 
+
+}
+
+.game-element{
+
+
+    color: #ffffff;
+    visibility: hidden;
+    font-size: 25px;
+}
+
+
+
