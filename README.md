@@ -1,3 +1,3 @@
 # Hangman-Game
 
-Word guessing game written in JavaScript
+Words guessing game written in JavaScript
